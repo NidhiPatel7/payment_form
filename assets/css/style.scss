@@ -1,0 +1,308 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    border: none;
+}
+@font-face{
+	font-family: kredit;
+	src:url("https://pattern.kivan-works.com/fonts/kredit.ttf");
+}
+.index
+{
+    background: linear-gradient(125deg, #fbd7e5, #bdf4fa);
+    height: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    .wrap
+    {
+        
+        .main
+        {
+            .container
+            {
+                background: linear-gradient(45deg, #b3bead 0%, #dfe5d7 60%, #fcfff4 100%);
+                padding: 5em;
+               
+                box-sizing:border-box;
+                box-shadow: -20px 14px 54px rgba(0, 0, 0, 0.55);
+                position: relative;
+                max-width: 80vh;
+                margin: auto;
+                margin-top: 5em;
+
+                .card_property
+                {
+                    background: linear-gradient(145deg, #4684c1, #343174);
+                    font-family: Inconsolata;
+                    font-size: 1.1em;
+                    box-shadow: -20px 14px 54px rgba(0, 0, 0, 0.55);
+                    border-radius: 0.5em;
+                    height: 100%;
+                    transform-style: preserve-3d;
+                    padding: 1em;
+                    width: 100%;
+                    color: white;
+                    perspective:200rem;
+                    position: absolute;
+                    left: 50%;
+                    top: 5%;
+                    transition: all ease 1s;
+                    
+                }
+                .main_card 
+                {
+                    position: relative;
+                    height: 10em;
+                    width: 18em;
+                    transition: all 0.9s ease;
+                }
+                .card
+                {
+                    z-index: 1;
+                    backface-visibility: hidden;
+                    .paypalCenter
+                    {
+                        background-image: url("../images/Artboard.png");
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        // we use cover because want to change img size (big or small) based on width and height.
+                        width: 15em;
+                        height: 15em;
+                        position: absolute;
+                        top: 50%;
+                        left: 39%;
+                        transform: translate(-50%,-50%);
+                        filter: drop-shadow(-6.4px 6.2px 8px rgba(0, 0, 0, 0.6));
+                        //  filter: drop-shadow(-6.4px 6.2px 8px rgba(0, 0, 0, 0.6)); we use to give shadow to image 
+
+                        
+                    }
+                    .cardtop
+                        {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            .logo
+                            {
+                                background-image: url("../images/logo.png");
+                                background-repeat: no-repeat; 
+                                flex: 0 0 50%;
+                                height: 5em;
+                                filter: drop-shadow(-6.4px 6.2px 8px rgba(0, 0, 0, 0.6));
+                                // position: absolute;
+                                // top: 50%;
+                                // left: 50%;
+                            }
+                            .payway
+                            {
+                                background-image: url("../images/payway.png");
+                                background-repeat: no-repeat; 
+                                height: 5em;
+                                flex: 0 0 7%;
+                                filter: drop-shadow(-6.4px 6.2px 8px rgba(0, 0, 0, 0.6));
+                            }
+                        }
+                    .chip
+                    {
+                        background-image: url("../images/chip.png");
+                        background-repeat: no-repeat; 
+                        height: 5em;
+                        filter: drop-shadow(-6.4px 6.2px 8px rgba(0, 0, 0, 0.6));
+                        position: absolute;
+                        left: 3%;
+                        top: 40%;
+                        width: 5em;
+                    }
+                    .validnumber
+                    {
+                        color: white;
+                        font-size: 1.2em;
+                        position: absolute;
+                        top: 60%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        width: 100%;
+                        text-align: center;
+                        box-sizing: border-box;
+                        font-family: kredit-front;
+                        text-shadow: -9px 8.7px 6px rgba(0, 0, 0, 0.8);
+                    }
+                    .validdata
+                    {
+                        color: white;
+                        position: absolute;
+                        top: 68%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        display: flex;
+                        align-items: center;
+                        text-shadow: -9px 8.7px 6px rgba(0, 0, 0, 0.8);
+                       .validtext
+                       {
+                            text-transform: uppercase;
+                            font-size: 0.6em;
+                            
+                       }
+                       .validdate 
+                       {
+                            font-family:kredit-front; 
+                       }
+                    }
+                    .name
+                    {
+                        position: absolute;
+                        left: 7%;
+                        top: 81%;
+                        text-transform: uppercase;
+                        text-shadow: -9px 8.7px 6px rgba(0, 0, 0, 0.8);
+                        font-family:kredit-front;
+                    }
+                    .mastercard 
+                    {
+                        background-image: url("../images/Mastercard.png");
+                        background-repeat: no-repeat; 
+                        background-size: 15em;
+                        height: 5em;
+                        width: 9em;
+                        filter: drop-shadow(-6.4px 6.2px 8px rgba(0, 0, 0, 0.6));
+                        position: absolute;
+                        bottom: 15%;
+                        right: 9%;
+                    }
+                    .mastercardtext
+                    {
+                        position: absolute;
+                        bottom: 8%;
+                        right: 5%;
+                        text-shadow: -9px 8.7px 6px rgba(0, 0, 0, 0.8);
+                    }
+                }
+                .back
+                {
+                   .flex
+                   {
+                       display: flex;
+                       align-items: center;
+                       margin-top: 2em;
+                       .white
+                        {
+                            background-color: whitesmoke;
+                            height: 2em;
+                            flex: 1 0 auto;
+                        }
+                        .ccv 
+                        {
+                            flex: 0 0 10%;
+                            margin-left: 0.5em;
+                        }
+                   }
+                   
+                    .black
+                    {
+                        background-color: #000;
+                        width: 100%;
+                        height: 2em;
+                    }
+                    
+                }
+               
+                 .card_front{
+                   
+                    transform: perspective(40em) rotateY(0deg);
+                    
+                }
+                .back_front{
+                    transform: perspective(40em) rotateY(180deg);
+                }
+                
+                .card_rotate{
+                    transform: perspective(40em) rotateY(180deg);
+                }
+                
+                .back_rotate{
+                    transform: perspective(40em) rotateY(360deg);
+                }
+                form 
+                {
+                    margin: 50% 10% 0 10%;
+                    color: #6C7A89;
+                    text-transform: uppercase;
+                    h1 
+                    {
+                        color:  #16A085;
+                        text-transform: uppercase;
+                        text-shadow: -3px 0.7px 1px rgba(0, 0, 0, 0.8)
+                    }
+                    .group
+                    {
+                        margin: 1em 0;
+                        position: relative;
+                        label 
+                        {
+                           
+                            text-shadow: -3px 0.7px 17px rgba(0, 0, 0, 0.8);
+                        }
+                        input 
+                        {
+                            padding: 1em;
+                            border-radius: 0.3em;
+                            width: 100%;
+                            box-sizing: border-box;
+                            margin-top: 3%;
+                            box-shadow: 6px 7px 13px rgba(0, 0, 0, 0.55);
+                            color: #6C7A89;
+                        }
+                        
+                            .message-success
+                            {
+                               i 
+                               {
+                                    color:  #16A085;
+                                    position: absolute;
+                                    top: 57%;
+                                    right: 5%;
+                               }
+                                
+                            }
+                            
+                        
+                    }
+                    .message-error
+                    {
+                        position: absolute;
+                        top: 55%;
+                        right: -25%;
+                        font-size: 0.8em;
+                        background-color: #e2fbf5;
+                        padding: 0.5em;
+                        line-height: 1.3em;
+                    }
+                    .message-error:after
+                    {
+                        content: "";
+                        border-color: transparent #e2fbf5 transparent transparent;
+                        border-width: 1.1em 1.5em 1.1em 0;
+                        border-style: solid;
+                        position: absolute;
+                        left: -14%;
+                        top: 0;
+                    }
+                    .button
+                    {
+                        padding: 0.5em 1em;
+                        box-shadow: -20px 14px 54px rgba(0, 0, 0, 0.55);
+                        box-shadow: 6px 7px 13px rgba(0, 0, 0, 0.55);
+                        background-color:#00b894;
+                        color: white;
+                        &:hover 
+                        {
+                            background-color: #16A085;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
